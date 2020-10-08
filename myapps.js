@@ -1,4 +1,29 @@
-var myname = "Enoch Darko"
+//final project
+
+let elements = document.getElementsByName('modifiedProperty');
+
+let div = document.getElementById('modify');
+
+function set()
+{
+    
+    for( let index = 0; index < elements.length; index++ )
+    {
+        let modifiedProperty = elements[ index ].getAttribute('id');
+        
+        let cssValue = elements[ index ].value;
+        
+        div.style[ modifiedProperty ] = cssValue;
+        
+    }
+}
+
+document.getElementById('set').addEventListener('click',set);
+
+
+// Practice work
+
+/*var myname = "Enoch Darko"
 var car ={
 	brand: "Evolvo",
 	maker: "Enoch Darko Company Limited",
@@ -65,6 +90,7 @@ car.stop = function(cstop){
 
 //delete car.version;
 
+
 // Addition of event handlers
 var select = document.getElementsByName('cars')[0];
 
@@ -75,3 +101,5 @@ select.onClick= function(event){
 select.addEventListener('click', function(event){
 	console.log("Hello you just click me")
 });
+*/
+
