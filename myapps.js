@@ -2,7 +2,7 @@ var myname = "Enoch Darko"
 var car ={
 	brand: "Evolvo",
 	maker: "Enoch Darko Company Limited",
-	speed: "500mph",
+	speed: 500,
 	year: 2020,
     model: "E2020",
 	engine: {
@@ -41,4 +41,27 @@ var array = [
 ];
 
 
-console.log(array[4] );
+//console.log(array[4] );
+
+
+//Resigning values to some members in the car object 
+car.brand= "Ford";
+car.maker += " vw";
+//car.speed = 20;
+car.speed += 70;
+car.speed -= 20;
+car.speed *= 2;
+car.speed /= 2;
+car.speed **= 2;
+car.speed %= 33;  
+car.speed -=22;
+
+// Creating new members in the car object
+car.version = "m33i";
+car.height = "6.5feet";
+car.stop = function(cstop){
+	var cstop = "Slow  down to a speed of " + car.speed + "mph and step on the break to stop"
+	return cstop };
+ //Deleting the object car.height created in line 
+
+delete car.version;
