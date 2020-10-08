@@ -43,7 +43,6 @@ var array = [
 
 //console.log(array[4] );
 
-
 //Resigning values to some members in the car object 
 car.brand= "Ford";
 car.maker += " vw";
@@ -64,4 +63,15 @@ car.stop = function(cstop){
 	return cstop };
  //Deleting the object car.height created in line 
 
-delete car.version;
+//delete car.version;
+
+// Addition of event handlers
+var select = document.getElementsByName('cars')[0];
+
+select.onClick= function(event){
+	console.log();
+}
+
+select.addEventListener('click', function(event){
+	console.log("Hello you just click me")
+});
